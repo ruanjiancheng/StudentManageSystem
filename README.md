@@ -105,7 +105,7 @@ java -jar student_server-0.0.1-SNAPSHOT.jar
 
 ### 数据库设计
 
-<img src="README.assets/studentms.png" alt="studentms" style="zoom:10%;" />
+<img src="README.assets/image-20220211163057648.png" alt="image-20220211163057648" style="zoom: 1%;" />
 
 建表代码：
 
