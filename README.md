@@ -6,6 +6,15 @@
 
 <img src="README.assets/image-20220211161726091.png" alt="image-20220211161726091" style="zoom:50%;" />
 
+#### 项目体验
+
+url: http://47.101.155.92:8080/
+
+- 教师端 id：4 password：123
+- 学生端 id：2 password：123
+
+欢迎大家测试
+
 #### 项目展示
 
 1. 登陆界面
