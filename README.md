@@ -81,12 +81,13 @@ npm run serve
 
 #### 项目运行
 
+**JDK 版本需要 17.0.2**
 ```shell
 git clone git@github.com:ruanjiancheng/StudentManageSystem.git
 
 cd /StudentManageSystem/student_server
 
-java -jar student_server-0.0.1-SNAPSHOT.jar
+java -jar student_server.jar
 
 ```
 
