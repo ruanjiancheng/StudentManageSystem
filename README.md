@@ -1,6 +1,6 @@
 ### 项目介绍
 
-这是一个采用前后端分离开发的项目，前端采用 vue 开发、后端采用 spring boot 开发。
+这是一个采用前后端分离开发的项目，前端采用 Vue 开发、后端采用 Spring boot + Mybatis 开发。
 
 <img src="README.assets/image-20220211161726091.png" alt="image-20220211161726091" style="zoom:50%;" />
 
@@ -51,7 +51,7 @@ npm run serve
 
 #### 项目介绍
 
-采用 vue 2.0 开发,通过调用后端提供的数据接口实现数据的动态渲染.
+采用 vue 2.0 开发,通过调用后端提供的数据接口实现数据的动态渲染. 项目默认端口号 8080
 
 - 使用监视器,以及得益于 Mybatis 提供动态 SQL 功能,实现动态搜索功能
 - 同时实现了基于前端和后端的数据分页功能
@@ -95,7 +95,9 @@ java -jar student_server-0.0.1-SNAPSHOT.jar
 
 #### 项目介绍
 
-采用 Restful 风格开发,采用 CrossOrigin 解决跨域问题. 采用注解以及 xml 文件配置 SQL 语句, 实现动态 SQL 的功能.
+采用 Restful 风格开发,采用 CrossOrigin 解决跨域问题. 采用注解以及 xml 文件配置 SQL 语句, 实现动态 SQL 的功能. 
+
+项目启动在 10086 端口, 可以使用 YAML 文件配置
 
 
 
