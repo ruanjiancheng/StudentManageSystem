@@ -50,6 +50,7 @@ npm run serve
 - router
 - axios
 - element ui
+- sessionStorage
 
 #### 项目介绍
 
@@ -60,6 +61,7 @@ npm run serve
 - 使用 router 配置路由,实现不同用户类型导航栏的动态渲染
 - 使用 axios 异步加载后端数据
 - 使用 element ui 实现表单的前端校验功能
+- 使用 sessionStorage 实现登录拦截
 
 #### 实现的功能
 
@@ -93,7 +95,7 @@ java -jar student_server-0.0.1-SNAPSHOT.jar
 - spring boot
 - Mybatis
 - JDBC
-- Lombok
+- servlet
 
 #### 项目介绍
 
