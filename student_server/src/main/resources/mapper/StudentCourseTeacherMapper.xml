@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.auggie.student_server.mapper.StudentCourseTeacherMapper">
+    <select id="findByStudentId" resultType="CourseTeacherInfo">
+        SELECT c.cid, c.cname, t.tid, t.tname, sct.grade, c.ccredit
+        FROM studentms.sct sct INNER JOIN studentms.t t ON sct.tid = t.tid
+                INNER JOIN studentms.c c ON sct.cid = c.cid
+        WHERE sct.sid = #{sid} AND sct.term = #{term}
+    </select>
+
+    <select id="findBySearch" resultType="SCTInfo">
+        SELECT c.cid, c.cname, t.tid, t.tname, s.sid, s.sname, sct.grade, sct.term
+        FROM studentms.sct sct INNER JOIN studentms.s s ON sct.sid = s.sid
+                INNER JOIN studentms.t t ON sct.tid = t.tid
+                INNER JOIN studentms.c c ON sct.cid = c.cid
+        <where>
+            <if test="sid != null">
+                s.sid = #{sid}
+            </if>
+            <if test="tid != null">
+                AND t.tid = #{tid}
+            </if>
+            <if test="cid != null">
+                AND c.cid = #{cid}
+            </if>
+            <if test="sname != null">
+                <if test="sFuzzy == 0">
+                    AND s.sname = #{sname}
+                </if>
+                <if test="sFuzzy == 1">
+                    AND s.sname LIKE CONCAT('%', #{sname}, '%')
+                </if>
+            </if>
+            <if test="tname != null">
+                <if test="tFuzzy == 0">
+                    AND t.tname = #{tname}
+                </if>
+                <if test="tFuzzy == 1">
+                    AND t.tname LIKE CONCAT('%', #{tname}, '%')
+                </if>
+            </if>
+            <if test="cname != null">
+                <if test="cFuzzy == 0">
+                    AND c.cname = #{cname}
+                </if>
+                <if test="cFuzzy == 1">
+                    AND c.cname LIKE CONCAT('%', #{cname}, '%')
+                </if>
+            </if>
+            <if test="term != null">
+                AND sct.term = #{term}
+            </if>
+            <if test="lowBound != null">
+                AND sct.grade >= #{lowBound}
+            </if>
+            <if test="highBound != null">
+                AND #{highBound} >= sct.grade
+            </if>
+        </where>
+    </select>
+</mapper>

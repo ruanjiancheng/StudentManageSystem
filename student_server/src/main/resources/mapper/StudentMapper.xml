@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.auggie.student_server.mapper.StudentMapper">
+    <select id="findAll" resultType="Student">
+        SELECT * FROM studentms.s;
+    </select>
+
+    <select id="findById" resultType="Student">
+        SELECT * FROM studentms.s WHERE sid = #{sid};
+    </select>
+
+    <select id="findBySearch" resultType="Student">
+        SELECT * FROM studentms.s
+        <where>
+            <if test="student.sid != null">
+                sid = #{student.sid}
+            </if>
+            <if test="student.sname != null">
+                <if test="fuzzy == 0">
+                    AND sname = #{student.sname}
+                </if>
+                <if test="fuzzy == 1">
+                    AND sname LIKE CONCAT('%', #{student.sname}, '%')
+                </if>
+            </if>
+        </where>
+    </select>
+
+    <update id="updateById">
+        UPDATE studentms.s SET
+        sname = #{student.sname},
+        password = #{student.password}
+        WHERE sid = #{student.sid};
+    </update>
+
+    <insert id="save">
+        INSERT INTO studentms.s (sname, password) VALUES (#{student.sname}, #{student.password})
+    </insert>
+
+    <delete id="deleteById">
+        DELETE FROM studentms.s WHERE sid = #{sid}
+    </delete>
+</mapper>

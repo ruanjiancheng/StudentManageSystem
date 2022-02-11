@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.101.155.92:3306/studentms?setUnicode=true&characterEncoding=utf8&useAffectedRows=true
+    username: auggie
+    password: 123
+
+mybatis:
+  type-aliases-package: com.auggie.student_server.entity
+  mapper-locations: classpath:mapper/*.xml
+
+server:
+  port: 10086

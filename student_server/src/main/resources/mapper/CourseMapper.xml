@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.auggie.student_server.mapper.CourseMapper">
+    <select id="findBySearch" resultType="Course">
+        SELECT * FROM studentms.c
+        <where>
+            <if test="cid != null">
+                cid = #{cid}
+            </if>
+            <if test="cname != null">
+                <if test="fuzzy == 0">
+                    AND cname = #{cname}
+                </if>
+                <if test="fuzzy == 1">
+                    AND cname LIKE CONCAT('%', #{cname}, '%')
+                </if>
+            </if>
+            <if test="lowBound != null">
+                AND ccredit >= #{lowBound}
+            </if>
+            <if test="highBound != null">
+                AND #{highBound} >= ccredit
+            </if>
+        </where>
+    </select>
+
+    <update id="updateById">
+        UPDATE studentms.c SET
+                               cname = #{course.cname},
+                               ccredit = #{course.ccredit}
+        WHERE cid = #{course.cid};
+    </update>
+
+    <insert id="insertCourse">
+        INSERT INTO studentms.c (cname, ccredit) VALUES (#{course.cname}, #{course.ccredit})
+    </insert>
+
+    <delete id="deleteById">
+        DELETE FROM studentms.c WHERE cid = #{cid}
+    </delete>
+</mapper>
