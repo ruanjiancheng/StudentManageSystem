@@ -103,6 +103,64 @@ java -jar student_server-0.0.1-SNAPSHOT.jar
 
 
 
+### 数据库设计
+
+<img src="README.assets/image-20220211163057648.png" alt="image-20220211163057648" style="zoom: 50%;" />
+
+建表代码：
+
+```sql
+CREATE DATABASE studentms;
+
+USE studentms;
+
+CREATE TABLE `s` (
+    `sid` INT AUTO_INCREMENT,
+    `sname` VARCHAR(30) NOT NULL,
+    `password` VARCHAR(30) NOT NULL,
+    PRIMARY KEY (`sid`)
+);
+
+CREATE TABLE `c` (
+    `cid` INT AUTO_INCREMENT,
+    `cname` VARCHAR(30) NOT NULL,
+    `ccredit` TINYINT,
+    PRIMARY KEY (`cid`)
+);
+
+CREATE TABLE `t` (
+    `tid` INT AUTO_INCREMENT,
+    `tname` VARCHAR(30) NOT NULL,
+    `password` VARCHAR(30) NOT NULL,
+    PRIMARY KEY (`tid`)
+);
+
+CREATE TABLE `ct` (
+    `ctid` INT AUTO_INCREMENT,
+    `cid` INT,
+    `tid` INT,
+    `term` CHAR(6) NOT NULL,
+    FOREIGN KEY (`cid`) REFERENCES c(`cid`),
+    FOREIGN KEY (`tid`) REFERENCES t(`tid`),
+    PRIMARY KEY (`ctid`)
+);
+
+CREATE TABLE `sct` (
+    `sctid` INT AUTO_INCREMENT,
+    `sid` INT,
+    `cid` INT,
+    `tid` INT,
+    `grade` FLOAT,
+    `term` CHAR(6),
+    FOREIGN KEY (`sid`) REFERENCES s(`sid`),
+    FOREIGN KEY (`tid`) REFERENCES ct(`tid`),
+    FOREIGN KEY (`cid`) REFERENCES ct(`cid`),
+    PRIMARY KEY (`sctid`)
+);
+```
+
+
+
 ### 项目存在的问题
 
 - 由于是第一次编写 Vue 项目, 代码复用做得并不是很好. 导致许多组件代码量巨大. 
