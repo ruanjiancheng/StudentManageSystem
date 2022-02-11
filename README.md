@@ -95,7 +95,7 @@ java -jar student_server-0.0.1-SNAPSHOT.jar
 - spring boot
 - Mybatis
 - JDBC
-- Lombok
+- servlet
 
 #### 项目介绍
 
