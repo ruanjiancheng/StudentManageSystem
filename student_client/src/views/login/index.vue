@@ -32,7 +32,6 @@
               <el-form-item>
                 <el-button type="primary" @click="submitForm('ruleForm')">登陆</el-button>
                 <el-button @click="resetForm('ruleForm')">重置</el-button>
-                <el-button @click="test('ruleForm')">test</el-button>
               </el-form-item>
             </el-form>
           </div>
@@ -197,7 +196,7 @@ export default {
   margin-top: 60px;
   /*border: none;*/
   position: absolute;
-  right: 500px;
+  right: 35%;
   text-align: center;
   width: 30%;
 }

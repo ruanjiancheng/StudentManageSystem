@@ -1,0 +1,53 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.3)
+
+2022-02-12 00:24:11.647  INFO 7663 --- [           main] c.a.s.StudentServerApplication           : Starting StudentServerApplication v0.0.1-SNAPSHOT using Java 17.0.2 on iZuf694tmueqwc1qv0nwwdZ with PID 7663 (/root/studentms/StudentManageSystem/student_server/student_server.jar started by root in /root/studentms/StudentManageSystem/student_server)
+2022-02-12 00:24:11.654  INFO 7663 --- [           main] c.a.s.StudentServerApplication           : No active profile set, falling back to default profiles: default
+2022-02-12 00:24:15.316  INFO 7663 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2022-02-12 00:24:15.342  INFO 7663 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-12 00:24:15.343  INFO 7663 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-12 00:24:15.499  INFO 7663 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-12 00:24:15.499  INFO 7663 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3638 ms
+2022-02-12 00:24:17.572  WARN 7663 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 10086 is already in use
+2022-02-12 00:24:17.583  INFO 7663 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-02-12 00:24:17.613  INFO 7663 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-12 00:24:17.665 ERROR 7663 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 10086 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 10086 or configure this application to listen on another port.
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.3)
+
+2022-02-12 00:33:40.331  INFO 3311 --- [           main] c.a.s.StudentServerApplication           : Starting StudentServerApplication v0.0.1-SNAPSHOT using Java 17.0.2 on iZuf694tmueqwc1qv0nwwdZ with PID 3311 (/root/studentms/StudentManageSystem/student_server/student_server.jar started by root in /root/studentms/StudentManageSystem/student_server)
+2022-02-12 00:33:40.337  INFO 3311 --- [           main] c.a.s.StudentServerApplication           : No active profile set, falling back to default profiles: default
+2022-02-12 00:33:43.977  INFO 3311 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2022-02-12 00:33:44.013  INFO 3311 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-12 00:33:44.014  INFO 3311 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-12 00:33:44.162  INFO 3311 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-12 00:33:44.163  INFO 3311 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3618 ms
+2022-02-12 00:33:46.428  INFO 3311 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2022-02-12 00:33:46.449  INFO 3311 --- [           main] c.a.s.StudentServerApplication           : Started StudentServerApplication in 7.899 seconds (JVM running for 9.163)
