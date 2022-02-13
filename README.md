@@ -73,7 +73,7 @@ npm run serve
 
 采用 vue 2.0 开发,通过调用后端提供的数据接口实现数据的动态渲染. 项目默认端口号 8080
 
-- 使用监视器,以及得益于 Mybatis 提供动态 SQL 功能,实现动态搜索功能
+- 使用监视器,得益于 Mybatis 动态 SQL 功能,实现高性能动态搜索功能
 - 同时实现了基于前端和后端的数据分页功能
 - 使用 router 配置路由,实现不同用户类型导航栏的动态渲染
 - 使用 axios 异步加载后端数据
@@ -110,16 +110,18 @@ java -jar student_server.jar
 
 #### 技术栈
 
-- spring boot
+- Spring boot 2.6.3
 - Mybatis
 - JDBC
-- servlet
+- Servlet
+- Maven
+- Tomcat
 
 #### 项目介绍
 
-采用 Restful 风格开发,采用 CrossOrigin 解决跨域问题. 采用注解以及 xml 文件配置 SQL 语句, 实现动态 SQL 的功能. 
+采用 Restful 风格开发,采用 CrossOrigin 解决跨域问题. 采用注解以及 xml 文件配置 SQL 语句, 实现动态 SQL 的功能. 为前端提供完备的数据接口.
 
-项目启动在 10086 端口, 可以使用 YAML 文件配置
+项目启动在 10086 端口, 可以使用 YAML 文件配置。
 
 
 
