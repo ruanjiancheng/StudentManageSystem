@@ -8,12 +8,6 @@
 
 #### 项目体验
 
-~~水平有限，服务器维护~~
-
-登录框偏移属于正常现象，~~因为不会 css ，所以采用了绝对定位。~~
-
-**建议使用电脑访问**，手机端登录表单可能偏移没了。
-
 url: http://47.101.155.92:8080/
 
 - 教师端 id：4 password：123
@@ -21,7 +15,15 @@ url: http://47.101.155.92:8080/
 
 欢迎大家测试
 
+#### 项目运行
+
+```shell
+sh run.sh
+```
+
 #### 项目展示
+
+~~不会 CSS 界面有点丑~~
 
 1. 登陆界面
 
@@ -61,17 +63,17 @@ npm run serve
 
 #### 技术栈
 
-- vuex
-- router
-- axios
-- element ui
+- Vuex
+- Router
+- Axios
+- Element ui
 - sessionStorage
 
 #### 项目介绍
 
 采用 vue 2.0 开发,通过调用后端提供的数据接口实现数据的动态渲染. 项目默认端口号 8080
 
-- 使用监视器,以及得益于 Mybatis 提供动态 SQL 功能,实现动态搜索功能
+- 使用监视器,得益于 Mybatis 动态 SQL 功能,实现高性能动态搜索功能
 - 同时实现了基于前端和后端的数据分页功能
 - 使用 router 配置路由,实现不同用户类型导航栏的动态渲染
 - 使用 axios 异步加载后端数据
@@ -108,16 +110,18 @@ java -jar student_server.jar
 
 #### 技术栈
 
-- spring boot
+- Spring boot 2.6.3
 - Mybatis
 - JDBC
-- servlet
+- Servlet
+- Maven
+- Tomcat
 
 #### 项目介绍
 
-采用 Restful 风格开发,采用 CrossOrigin 解决跨域问题. 采用注解以及 xml 文件配置 SQL 语句, 实现动态 SQL 的功能. 
+采用 Restful 风格开发,采用 CrossOrigin 解决跨域问题. 采用注解以及 xml 文件配置 SQL 语句, 实现动态 SQL 的功能. 为前端提供完备的数据接口.
 
-项目启动在 10086 端口, 可以使用 YAML 文件配置
+由于 vue 项目占用了 8080 tomcat 默认端口，所以指定项目启动在 10086 端口, 可以使用 YAML 文件配置。
 
 
 
