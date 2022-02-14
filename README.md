@@ -63,10 +63,10 @@ npm run serve
 
 #### 技术栈
 
-- vuex
-- router
-- axios
-- element ui
+- Vuex
+- Router
+- Axios
+- Element ui
 - sessionStorage
 
 #### 项目介绍
@@ -121,7 +121,7 @@ java -jar student_server.jar
 
 采用 Restful 风格开发,采用 CrossOrigin 解决跨域问题. 采用注解以及 xml 文件配置 SQL 语句, 实现动态 SQL 的功能. 为前端提供完备的数据接口.
 
-项目启动在 10086 端口, 可以使用 YAML 文件配置。
+由于 vue 项目占用了 8080 tomcat 默认端口，所以指定项目启动在 10086 端口, 可以使用 YAML 文件配置。
 
 
 
