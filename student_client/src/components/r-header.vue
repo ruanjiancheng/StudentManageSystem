@@ -1,5 +1,6 @@
 <template>
   <div>
+      <i class="el-icon-s-release" style="margin-right: 18px"></i>
       <el-button type="text" style="color: #333333; font-size: 18px" @click="out()">
         logout
       </el-button>

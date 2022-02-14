@@ -233,3 +233,86 @@ java.lang.IllegalArgumentException: Invalid character found in method name [0x03
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.56.jar!/:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+正在验证教师登陆 Teacher(tid=6, tname=null, password=123)
+数据库教师信息Teacher(tid=6, tname=admin, password=123)
+正在查询学生信息 By id 6
+查询学生列表分页 0 7
+{tid=null, tname=null, fuzzy=true}
+查询类型：null, null, 1
+SCT 查询：{sid=null, sname=null, sFuzzy=true, tid=null, tname=null, tFuzzy=true, cid=null, cname=null, cFuzzy=true, lowBound=null, highBound=null, term=22-春季学期}
+2022-02-14 17:24:23.225  WARN 5253 --- [o-10086-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'HEAD' not supported]
+正在验证教师登陆 Teacher(tid=6, tname=null, password=123)
+数据库教师信息Teacher(tid=6, tname=admin, password=123)
+正在查询学生信息 By id 6
+查询学生列表分页 0 7
+查询课程 map：{cid=null, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+查询课程 map：{cid=6, cname=null, fuzzy=true, lowBound=null, highBound=null}
+6 null 1 null null
+查询课程 map：{cid=, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+查询课程 map：{cid=7, cname=null, fuzzy=true, lowBound=null, highBound=null}
+7 null 1 null null
+查询课程 map：{cid=, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+查询课程 map：{cid=2, cname=null, fuzzy=true, lowBound=null, highBound=null}
+2 null 1 null null
+查询课程 map：{cid=, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+查询课程 map：{cid=4, cname=null, fuzzy=true, lowBound=null, highBound=null}
+4 null 1 null null
+查询课程 map：{cid=, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+查询课程 map：{cid=5, cname=null, fuzzy=true, lowBound=null, highBound=null}
+5 null 1 null null
+查询课程 map：{cid=, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+查询课程 map：{cid=6, cname=null, fuzzy=true, lowBound=null, highBound=null}
+6 null 1 null null
+查询课程 map：{cid=, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+查询课程 map：{cid=7, cname=null, fuzzy=true, lowBound=null, highBound=null}
+7 null 1 null null
+查询课程 map：{cid=, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+查询课程 map：{cid=6, cname=null, fuzzy=true, lowBound=null, highBound=null}
+6 null 1 null null
+查询课程 map：{cid=, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+查询课程 map：{cid=, cname=计算, fuzzy=true, lowBound=null, highBound=null}
+null 计算 1 null null
+查询课程 map：{cid=, cname=计, fuzzy=true, lowBound=null, highBound=null}
+null 计 1 null null
+查询课程 map：{cid=, cname=计, fuzzy=false, lowBound=null, highBound=null}
+null 计 0 null null
+查询课程 map：{cid=, cname=计, fuzzy=true, lowBound=null, highBound=null}
+null 计 1 null null
+查询课程 map：{cid=, cname=, fuzzy=true, lowBound=null, highBound=null}
+null  1 null null
+查询课程 map：{cid=, cname=, fuzzy=true, lowBound=0, highBound=null}
+null  1 0 null
+查询课程 map：{cid=, cname=, fuzzy=true, lowBound=0, highBound=3}
+null  1 0 3
+查询课程 map：{cid=, cname=, fuzzy=true, lowBound=0, highBound=}
+null  1 0 null
+查询课程 map：{cid=, cname=, fuzzy=true, lowBound=, highBound=}
+null  1 null null
+{tid=null, tname=null, fuzzy=true}
+查询类型：null, null, 1
+查询学生列表分页 0 7
+{tid=null, tname=null, fuzzy=true}
+查询类型：null, null, 1
+查询课程 map：{cid=null, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+查询课程 map：{cid=null, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+{tid=null, tname=null, fuzzy=true}
+查询类型：null, null, 1
+查询学生列表分页 0 7
+正在查询学生信息 By id 1
+查询学生列表分页 0 7
+查询学生列表分页 0 7
+正在验证教师登陆 Teacher(tid=6, tname=null, password=123)
+数据库教师信息Teacher(tid=6, tname=admin, password=123)
+正在查询学生信息 By id 6
+SCT 查询：{sid=null, sname=null, sFuzzy=true, tid=null, tname=null, tFuzzy=true, cid=null, cname=null, cFuzzy=true, lowBound=null, highBound=null, term=22-春季学期}

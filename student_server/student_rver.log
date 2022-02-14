@@ -7,29 +7,55 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.6.3)
 
-2022-02-12 09:52:16.190  INFO 6229 --- [           main] c.a.s.StudentServerApplication           : Starting StudentServerApplication v0.0.1-SNAPSHOT using Java 17.0.2 on iZuf694tmueqwc1qv0nwwdZ with PID 6229 (/root/studentms/StudentManageSystem/student_server/student_server.jar started by root in /root/studentms/StudentManageSystem/student_server)
-2022-02-12 09:52:16.198  INFO 6229 --- [           main] c.a.s.StudentServerApplication           : No active profile set, falling back to default profiles: default
-2022-02-12 09:52:20.511  INFO 6229 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
-2022-02-12 09:52:20.589  INFO 6229 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-02-12 09:52:20.590  INFO 6229 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
-2022-02-12 09:52:20.787  INFO 6229 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-02-12 09:52:20.788  INFO 6229 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4394 ms
-2022-02-12 09:52:23.146  WARN 6229 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 10086 is already in use
-2022-02-12 09:52:23.160  INFO 6229 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2022-02-12 09:52:23.226  INFO 6229 --- [           main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-02-12 09:52:23.270 ERROR 6229 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 10086 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 10086 or configure this application to listen on another port.
-
+2022-02-14 20:55:52.237  INFO 2699 --- [           main] c.a.s.StudentServerApplication           : Starting StudentServerApplication v0.0.1-SNAPSHOT using Java 17.0.2 on iZuf694tmueqwc1qv0nwwdZ with PID 2699 (/root/studentms/StudentManageSystem/student_server/student_server.jar started by root in /root/studentms/StudentManageSystem/student_server)
+2022-02-14 20:55:52.266  INFO 2699 --- [           main] c.a.s.StudentServerApplication           : No active profile set, falling back to default profiles: default
+2022-02-14 20:55:56.830  INFO 2699 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2022-02-14 20:55:56.876  INFO 2699 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-14 20:55:56.877  INFO 2699 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-14 20:55:57.063  INFO 2699 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-14 20:55:57.064  INFO 2699 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4556 ms
+2022-02-14 20:56:00.275  INFO 2699 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2022-02-14 20:56:00.307  INFO 2699 --- [           main] c.a.s.StudentServerApplication           : Started StudentServerApplication in 9.921 seconds (JVM running for 12.085)
+2022-02-14 20:56:48.023  INFO 2699 --- [io-10086-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-14 20:56:48.024  INFO 2699 --- [io-10086-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-14 20:56:48.026  INFO 2699 --- [io-10086-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+正在验证学生登陆 Student(sid=4, sname=null, password=123)
+2022-02-14 20:56:48.703  INFO 2699 --- [io-10086-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-14 20:56:49.920  INFO 2699 --- [io-10086-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+正在验证学生登陆 Student(sid=4, sname=null, password=123456)
+正在查询学生信息 By id 4
+ct 模糊查询{tid=null, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+正在验证学生登陆 Student(sid=4, sname=null, password=123456)
+正在查询学生信息 By id 4
+ct 模糊查询{tid=null, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+正在验证教师登陆 Teacher(tid=4, tname=null, password=123)
+数据库教师信息Teacher(tid=4, tname=李玉民, password=123)
+正在查询学生信息 By id 4
+查询教师课程：4 22-春季学期
+查询课程 map：{cid=null, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+SCT 查询：{sid=null, sname=null, sFuzzy=true, tid=4, tname=null, tFuzzy=true, cid=null, cname=null, cFuzzy=true, lowBound=null, highBound=null, term=22-春季学期}
+2022-02-14 20:57:41.806  WARN 2699 --- [io-10086-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+查询课程 map：{cid=null, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+查询教师课程：4 22-春季学期
+SCT 查询：{sid=null, sname=null, sFuzzy=true, tid=4, tname=null, tFuzzy=true, cid=null, cname=null, cFuzzy=true, lowBound=null, highBound=null, term=22-春季学期}
+SCT 查询：{sid=null, sname=null, sFuzzy=true, tid=4, tname=null, tFuzzy=true, cid=null, cname=null, cFuzzy=true, lowBound=null, highBound=null, term=22-春季学期}
+正在验证学生登陆 Student(sid=4, sname=null, password=123456)
+正在查询学生信息 By id 4
+正在验证教师登陆 Teacher(tid=6, tname=null, password=123)
+数据库教师信息Teacher(tid=6, tname=admin, password=123)
+正在查询学生信息 By id 6
+正在保存学生对象Student(sid=null, sname=李煜豪, password=123)
+查询学生列表分页 0 7
+正在验证教师登陆 Teacher(tid=6, tname=null, password=123)
+数据库教师信息Teacher(tid=6, tname=admin, password=123)
+正在查询学生信息 By id 6
+查询学生列表分页 0 7
+查询学生列表分页 1 7
+正在验证学生登陆 Student(sid=23, sname=null, password=123)
+正在查询学生信息 By id 23
+ct 模糊查询{tid=null, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]

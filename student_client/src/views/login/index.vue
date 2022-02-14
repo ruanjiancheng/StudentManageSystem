@@ -8,7 +8,7 @@
         </div>
       </el-header>
       <el-main>
-        <el-card class="login-module" shadow="hover">
+        <el-card class="login-module">
           <div slot="header" class="clearfix">
             <span style="text-align: center; font-size: 20px; font-family: 'Microsoft YaHei'">
               <p><i class="el-icon-office-building" style="margin-right: 18px"></i>登陆</p>

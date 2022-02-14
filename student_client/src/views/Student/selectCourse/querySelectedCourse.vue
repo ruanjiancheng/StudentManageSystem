@@ -117,7 +117,7 @@ export default {
     const sid = sessionStorage.getItem('sid')
     const term = sessionStorage.getItem('currentTerm')
     const that = this
-    axios.get('http://localhost:10086/SCT/findBySid/' + sid + '/' + term).then(function (resp) {
+    axios.get('http://47.101.155.92:10086/SCT/findBySid/' + sid + '/' + term).then(function (resp) {
       that.tmpList = resp.data
       that.total = resp.data.length
       let start = 0, end = that.pageSize
