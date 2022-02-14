@@ -42,7 +42,7 @@ export default {
           const that = this
           // console.log(this.ruleForm)
 
-          axios.post("http://localhost:10086/course/save", this.ruleForm).then(function (resp) {
+          axios.post("http://47.101.155.92:10086/course/save", this.ruleForm).then(function (resp) {
             console.log(resp)
             if (resp.data === true) {
               that.$message({

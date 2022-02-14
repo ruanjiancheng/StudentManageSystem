@@ -62,7 +62,7 @@ export default {
         return
       }
       const that = this
-      axios.get('http://localhost:10086/teacher/deleteById/' + row.tid).then(function (resp) {
+      axios.get('http://47.101.155.92:10086/teacher/deleteById/' + row.tid).then(function (resp) {
         if (resp.data === true) {
           that.$message({
             showClose: true,
@@ -131,7 +131,7 @@ export default {
         that.tmpList = null
         that.total = null
         that.tableData = null
-        axios.post("http://localhost:10086/teacher/findBySearch", newRuleForm).then(function (resp) {
+        axios.post("http://47.101.155.92:10086/teacher/findBySearch", newRuleForm).then(function (resp) {
           console.log("查询结果:");
           console.log(newRuleForm)
           console.log(resp)

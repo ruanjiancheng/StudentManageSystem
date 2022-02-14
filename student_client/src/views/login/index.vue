@@ -71,22 +71,22 @@ export default {
           let check = false
           let name = null
 
-          axios.get('http://localhost:10086/info/getCurrentTerm').then(function (resp) {
+          axios.get('http://47.101.155.92:10086/info/getCurrentTerm').then(function (resp) {
             sessionStorage.setItem("currentTerm", resp.data)
           })
 
-          axios.get('http://localhost:10086/info/getForbidCourseSelection').then(function (resp) {
+          axios.get('http://47.101.155.92:10086/info/getForbidCourseSelection').then(function (resp) {
             sessionStorage.setItem("ForbidCourseSelection", resp.data)
           })
 
           if (that.ruleForm.type === 'admin' || that.ruleForm.type === 'teacher') {
             let form = {tid: that.ruleForm.id, password: that.ruleForm.password}
             console.log(form)
-            axios.post("http://localhost:10086/teacher/login", form).then(function (resp) {
+            axios.post("http://47.101.155.92:10086/teacher/login", form).then(function (resp) {
               console.log("教师登陆验证信息：" + resp.data)
               check = resp.data
               if (check === true) {
-                axios.get("http://localhost:10086/teacher/findById/" + that.ruleForm.id).then(function (resp) {
+                axios.get("http://47.101.155.92:10086/teacher/findById/" + that.ruleForm.id).then(function (resp) {
                   console.log("登陆页正在获取用户信息" + resp.data)
                   name = resp.data.tname
 
@@ -133,11 +133,11 @@ export default {
           }
           else if (that.ruleForm.type === 'student') {
             let form = {sid: that.ruleForm.id, password: that.ruleForm.password}
-            axios.post("http://localhost:10086/student/login", form).then(function (resp) {
+            axios.post("http://47.101.155.92:10086/student/login", form).then(function (resp) {
               console.log("学生登陆验证信息：" + resp.data)
               check = resp.data
               if (check === true) {
-                axios.get("http://localhost:10086/student/findById/" + that.ruleForm.id).then(function (resp) {
+                axios.get("http://47.101.155.92:10086/student/findById/" + that.ruleForm.id).then(function (resp) {
                   console.log("登陆页正在获取用户信息" + resp.data)
                   name = resp.data.sname
 

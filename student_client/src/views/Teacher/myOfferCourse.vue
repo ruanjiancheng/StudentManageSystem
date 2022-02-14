@@ -70,7 +70,7 @@ export default {
     console.log(this.term)
 
     const that = this
-    axios.get('http://localhost:10086/courseTeacher/findMyCourse/' + this.tid + '/' + this.term).then(function (resp) {
+    axios.get('http://47.101.155.92:10086/courseTeacher/findMyCourse/' + this.tid + '/' + this.term).then(function (resp) {
 
       that.tmpList = resp.data
       that.total = resp.data.length

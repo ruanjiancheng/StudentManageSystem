@@ -23,8 +23,6 @@ export default {
   },
   created() {
     this.type = sessionStorage.getItem("type")
-    console.log('aside: ' + this.type)
-    console.log(this.$router.options)
   }
 }
 </script>

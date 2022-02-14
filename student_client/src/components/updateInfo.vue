@@ -88,7 +88,7 @@ export default {
             }
           }
 
-          axios.post('http://localhost:10086/' + type + '/update' + ss, form).then(function (resp) {
+          axios.post('http://47.101.155.92:10086/' + type + '/update' + ss, form).then(function (resp) {
             if (resp.data === true) {
               that.$message({
                 showClose: true,

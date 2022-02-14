@@ -71,7 +71,7 @@ export default {
         term: term
       }
       const that = this
-      axios.post('http://localhost:10086/SCT/save', sct).then(function (resp) {
+      axios.post('http://47.101.155.92:10086/SCT/save', sct).then(function (resp) {
         if (resp.data === '选课成功') {
           that.$message({
             showClose: true,
@@ -91,7 +91,7 @@ export default {
     },
     deleteCourseTeacher(row) {
       const that = this
-      axios.post('http://localhost:10086/courseTeacher/deleteById', row).then(function (resp) {
+      axios.post('http://47.101.155.92:10086/courseTeacher/deleteById', row).then(function (resp) {
         if (resp.data === true) {
           that.$message({
             showClose: true,
@@ -138,7 +138,7 @@ export default {
         that.tmpList = null
         that.total = null
         that.tableData = null
-        axios.post("http://localhost:10086/courseTeacher/findCourseTeacherInfo", newRuleForm).then(function (resp) {
+        axios.post("http://47.101.155.92:10086/courseTeacher/findCourseTeacherInfo", newRuleForm).then(function (resp) {
           that.tmpList = resp.data
           that.total = resp.data.length
           let start = 0, end = that.pageSize

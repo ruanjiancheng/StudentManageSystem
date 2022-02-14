@@ -43,7 +43,7 @@ export default {
     else {
       this.ruleForm.cid = this.$route.query.cid
     }
-    axios.get('http://localhost:10086/course/findById/' + this.ruleForm.cid).then(function (resp) {
+    axios.get('http://47.101.155.92:10086/course/findById/' + this.ruleForm.cid).then(function (resp) {
       that.ruleForm = resp.data[0]
       console.log(that.ruleForm)
     })
@@ -55,7 +55,7 @@ export default {
           // 通过前端校验
           const that = this
           console.log(this.ruleForm)
-          axios.post("http://localhost:10086/course/updateCourse", this.ruleForm).then(function (resp) {
+          axios.post("http://47.101.155.92:10086/course/updateCourse", this.ruleForm).then(function (resp) {
             if (resp.data === true) {
               that.$message({
                 showClose: true,

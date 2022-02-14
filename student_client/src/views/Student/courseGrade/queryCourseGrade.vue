@@ -84,7 +84,7 @@ export default {
   },
   created() {
     const that = this
-    axios.get('http://localhost:10086/SCT/findAllTerm').then(function (resp) {
+    axios.get('http://47.101.155.92:10086/SCT/findAllTerm').then(function (resp) {
       that.termList = resp.data
     })
   },
@@ -93,7 +93,7 @@ export default {
       handler(newTerm, oldTerm) {
         const sid = sessionStorage.getItem('sid')
         const that = this
-        axios.get('http://localhost:10086/SCT/findBySid/' + sid + '/' + newTerm).then(function (resp) {
+        axios.get('http://47.101.155.92:10086/SCT/findBySid/' + sid + '/' + newTerm).then(function (resp) {
           that.tmpList = resp.data
           that.total = resp.data.length
           let start = 0, end = that.pageSize

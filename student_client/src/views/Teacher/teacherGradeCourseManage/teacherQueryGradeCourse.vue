@@ -90,7 +90,7 @@ export default {
   },
   created() {
     const that = this
-    axios.get('http://localhost:10086/SCT/findAllTerm').then(function (resp) {
+    axios.get('http://47.101.155.92:10086/SCT/findAllTerm').then(function (resp) {
       that.termList = resp.data
     })
   },

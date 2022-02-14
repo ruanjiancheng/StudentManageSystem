@@ -90,7 +90,7 @@ export default {
       const cid = row.cid
       const tid = row.tid
       const term = row.term
-      axios.get("http://localhost:10086/SCT/deleteById/" + sid + '/' + cid + '/' + tid + '/' + term).then(function (resp) {
+      axios.get("http://47.101.155.92:10086/SCT/deleteById/" + sid + '/' + cid + '/' + tid + '/' + term).then(function (resp) {
         console.log(resp)
         if (resp.data === true) {
           that.$message({
@@ -155,7 +155,7 @@ export default {
         that.tmpList = null
         that.total = null
         that.tableData = null
-        axios.post("http://localhost:10086/SCT/findBySearch", newRuleForm).then(function (resp) {
+        axios.post("http://47.101.155.92:10086/SCT/findBySearch", newRuleForm).then(function (resp) {
           console.log("查询结果:");
           console.log(resp)
           that.tmpList = resp.data

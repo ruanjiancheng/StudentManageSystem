@@ -23,3 +23,213 @@ nohup: ignoring input
 正在查询学生信息 By id 6
 2022-02-12 09:42:40.252  INFO 5253 --- [io-10086-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2022-02-12 09:42:41.420  INFO 5253 --- [io-10086-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+正在查询学生信息 By id 6
+正在验证教师登陆 Teacher(tid=6, tname=null, password=123)
+数据库教师信息Teacher(tid=6, tname=admin, password=123)
+正在查询学生信息 By id 6
+正在验证学生登陆 Student(sid=2, sname=null, password=123)
+正在查询学生信息 By id 2
+ct 模糊查询{tid=null, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+正在验证教师登陆 Teacher(tid=4, tname=null, password=123)
+数据库教师信息Teacher(tid=4, tname=李玉民, password=123)
+正在查询学生信息 By id 4
+SCT 查询：{sid=null, sname=null, sFuzzy=true, tid=4, tname=null, tFuzzy=true, cid=null, cname=null, cFuzzy=true, lowBound=null, highBound=null, term=22-春季学期}
+2022-02-12 10:26:50.307  WARN 5253 --- [io-10086-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+查询教师课程：4 22-春季学期
+查询课程 map：{cid=null, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+查询教师课程：4 22-春季学期
+查询课程 map：{cid=null, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+正在验证教师登陆 Teacher(tid=4, tname=null, password=123)
+数据库教师信息Teacher(tid=4, tname=李玉民, password=123)
+正在查询学生信息 By id 4
+SCT 查询：{sid=null, sname=null, sFuzzy=true, tid=4, tname=null, tFuzzy=true, cid=null, cname=null, cFuzzy=true, lowBound=null, highBound=null, term=22-春季学期}
+SCT 查询：{sid=null, sname=null, sFuzzy=true, tid=4, tname=null, tFuzzy=true, cid=null, cname=null, cFuzzy=true, lowBound=null, highBound=null, term=22-春季学期}
+正在验证学生登陆 Student(sid=2, sname=null, password=123)
+正在查询学生信息 By id 2
+正在验证教师登陆 Teacher(tid=6, tname=null, password=123)
+数据库教师信息Teacher(tid=6, tname=admin, password=123)
+正在查询学生信息 By id 6
+正在验证学生登陆 Student(sid=2, sname=null, password=123)
+正在查询学生信息 By id 2
+正在验证学生登陆 Student(sid=1, sname=null, password=1)
+正在验证学生登陆 Student(sid=2, sname=null, password=2)
+正在验证学生登陆 Student(sid=3, sname=null, password=3)
+正在验证教师登陆 Teacher(tid=3, tname=null, password=3)
+数据库教师信息null
+正在验证教师登陆 Teacher(tid=1, tname=null, password=1)
+数据库教师信息null
+正在验证教师登陆 Teacher(tid=2, tname=null, password=2)
+数据库教师信息null
+正在验证教师登陆 Teacher(tid=2, tname=null, password=123)
+数据库教师信息null
+正在验证学生登陆 Student(sid=2, sname=null, password=123)
+正在查询学生信息 By id 2
+ct 模糊查询{tid=null, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+ct 模糊查询{tid=null, cid=null, cname=null, tname=null, tFuzzy=false, cFuzzy=true}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+ct 模糊查询{tid=null, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+ct 模糊查询{tid=null, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=false}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+ct 模糊查询{tid=null, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+ct 模糊查询{tid=null, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+更新 Student(sid=2, sname=张四, password=123)
+ct 模糊查询{tid=null, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+ct 模糊查询{tid=1, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[]
+ct 模糊查询{tid=null, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+ct 模糊查询{tid=2, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[]
+ct 模糊查询{tid=, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+ct 模糊查询{tid=1, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[]
+ct 模糊查询{tid=, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+正在验证学生登陆 Student(sid=4, sname=null, password=123)
+正在验证教师登陆 Teacher(tid=4, tname=null, password=123)
+数据库教师信息Teacher(tid=4, tname=李玉民, password=123)
+正在查询学生信息 By id 4
+查询教师课程：4 22-春季学期
+查询课程 map：{cid=null, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+SCT 查询：{sid=null, sname=null, sFuzzy=true, tid=4, tname=null, tFuzzy=true, cid=null, cname=null, cFuzzy=true, lowBound=null, highBound=null, term=22-春季学期}
+2022-02-12 20:16:46.578  WARN 5253 --- [io-10086-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+正在验证学生登陆 Student(sid=2, sname=null, password=123)
+正在查询学生信息 By id 2
+ct 模糊查询{tid=null, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+ct 模糊查询{tid=null, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+ct 模糊查询{tid=null, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=false}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+ct 模糊查询{tid=null, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+2022-02-12 20:42:15.945  WARN 5253 --- [io-10086-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'HEAD' not supported]
+2022-02-12 20:51:59.257  INFO 5253 --- [io-10086-exec-7] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x030x000x00/*0xe00x000x000x000x000x00Cookie: ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-02-12 20:53:27.232  WARN 5253 --- [io-10086-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'HEAD' not supported]
+2022-02-12 20:56:19.993  WARN 5253 --- [io-10086-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'HEAD' not supported]
+查询教师课程：4 22-春季学期
+正在验证教师登陆 Teacher(tid=6, tname=null, password=123)
+数据库教师信息Teacher(tid=6, tname=admin, password=123)
+正在查询学生信息 By id 6
+SCT 查询：{sid=null, sname=null, sFuzzy=true, tid=null, tname=null, tFuzzy=true, cid=null, cname=null, cFuzzy=true, lowBound=null, highBound=null, term=22-春季学期}
+SCT 查询：{sid=null, sname=null, sFuzzy=true, tid=null, tname=null, tFuzzy=true, cid=null, cname=null, cFuzzy=true, lowBound=null, highBound=null, term=22-春季学期}
+正在验证学生登陆 Student(sid=2, sname=null, password=123)
+正在查询学生信息 By id 2
+ct 模糊查询{tid=null, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+正在验证教师登陆 Teacher(tid=6, tname=null, password=123)
+数据库教师信息Teacher(tid=6, tname=admin, password=123)
+正在查询学生信息 By id 6
+SCT 查询：{sid=null, sname=null, sFuzzy=true, tid=null, tname=null, tFuzzy=true, cid=null, cname=null, cFuzzy=true, lowBound=null, highBound=null, term=22-春季学期}
+ct 模糊查询{tid=null, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+Course(cid=null, cname=RJC教你做选课系统, ccredit=10)
+查询课程 map：{cid=null, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+查询课程 map：{cid=null, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+查询课程 map：{cid=null, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+ct 模糊查询{tid=null, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+查询学生列表分页 0 7
+查询学生列表分页 1 7
+查询学生列表分页 0 7
+查询学生列表分页 0 7
+查询学生列表分页 0 7
+查询学生列表分页 1 7
+正在查询学生信息 By id 1
+查询学生列表分页 0 7
+正在查询学生信息 By id 1
+查询学生列表分页 0 7
+正在查询学生信息 By id 1
+正在验证学生登陆 Student(sid=2, sname=null, password=123)
+正在查询学生信息 By id 2
+正在验证教师登陆 Teacher(tid=4, tname=null, password=123)
+数据库教师信息Teacher(tid=4, tname=李玉民, password=123)
+正在查询学生信息 By id 4
+SCT 查询：{sid=null, sname=null, sFuzzy=true, tid=4, tname=null, tFuzzy=true, cid=null, cname=null, cFuzzy=true, lowBound=null, highBound=null, term=22-春季学期}
+SCT 查询：{sid=null, sname=null, sFuzzy=true, tid=4, tname=null, tFuzzy=true, cid=null, cname=null, cFuzzy=true, lowBound=null, highBound=null, term=22-春季学期}
+正在验证教师登陆 Teacher(tid=6, tname=null, password=123)
+数据库教师信息Teacher(tid=6, tname=admin, password=123)
+正在查询学生信息 By id 6
+ct 模糊查询{tid=null, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+查询课程 map：{cid=null, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+正在查询学生信息 By id 6
+正在查询学生信息 By id 6
+2022-02-13 17:15:42.553  INFO 5253 --- [io-10086-exec-4] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x030x000x00/*0xe00x000x000x000x000x00Cookie: ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+正在验证教师登陆 Teacher(tid=6, tname=null, password=123)
+数据库教师信息Teacher(tid=6, tname=admin, password=123)
+正在查询学生信息 By id 6
+查询学生列表分页 0 7
+查询学生列表分页 1 7
+查询学生列表分页 0 7
+{tid=null, tname=null, fuzzy=true}
+查询类型：null, null, 1
+正在查询学生信息 By id 6
+查询课程 map：{cid=null, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+查询课程 map：{cid=null, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+查询课程 map：{cid=null, cname=null, fuzzy=true, lowBound=null, highBound=null}
+null null 1 null null
+ct 模糊查询{tid=null, cid=null, cname=null, tname=null, tFuzzy=true, cFuzzy=true}
+[CourseTeacherInfo(cid=8, tid=4, cname=组合数学, tname=李玉民, ccredit=3, grade=null), CourseTeacherInfo(cid=7, tid=4, cname=数据结构, tname=李玉民, ccredit=6, grade=null), CourseTeacherInfo(cid=10, tid=13, cname=计算机组成原理, tname=张三, ccredit=5, grade=null), CourseTeacherInfo(cid=9, tid=13, cname=计算机网络, tname=张三, ccredit=5, grade=null)]
+SCT 查询：{sid=null, sname=null, sFuzzy=true, tid=null, tname=null, tFuzzy=true, cid=null, cname=null, cFuzzy=true, lowBound=null, highBound=null, term=22-春季学期}
+2022-02-13 22:37:17.175  WARN 5253 --- [io-10086-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+SCT 查询：{sid=null, sname=null, sFuzzy=true, tid=null, tname=null, tFuzzy=true, cid=null, cname=null, cFuzzy=true, lowBound=null, highBound=null, term=22-春季学期}
+2022-02-14 03:15:39.614  INFO 5253 --- [io-10086-exec-1] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x030x000x00/*0xe00x000x000x000x000x00Cookie: ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.56.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+

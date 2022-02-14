@@ -65,7 +65,7 @@ export default {
     this.ruleForm.tid = this.$route.query.tid
     this.ruleForm.sid = this.$route.query.sid
     this.ruleForm.term = this.$route.query.term
-    axios.get('http://localhost:10086/SCT/findById/' +
+    axios.get('http://47.101.155.92:10086/SCT/findById/' +
         this.ruleForm.sid + '/' +
         this.ruleForm.cid + '/' +
         this.ruleForm.tid + '/' +
@@ -84,7 +84,7 @@ export default {
           const tid = that.ruleForm.tid
           const term = that.ruleForm.term
           const grade = that.ruleForm.grade
-          axios.get("http://localhost:10086/SCT/updateById/" + sid + '/' + cid + '/' + tid + '/' + term + '/' + grade).then(function (resp) {
+          axios.get("http://47.101.155.92:10086/SCT/updateById/" + sid + '/' + cid + '/' + tid + '/' + term + '/' + grade).then(function (resp) {
             if (resp.data === true) {
               that.$message({
                 showClose: true,
