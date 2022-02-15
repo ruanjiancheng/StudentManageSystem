@@ -8,6 +8,8 @@
 
 #### 项目体验
 
+服务器比较慢，初次访问请耐心等待。
+
 url: http://47.101.155.92:8080/
 
 - 教师端 id：4 password：123
@@ -15,7 +17,13 @@ url: http://47.101.155.92:8080/
 
 欢迎大家测试
 
-#### 项目运行
+#### 项目部署
+
+1. star 一下项目
+2. 将 studentms.sql 导入数据库
+2. 配置 student_client 中的 axios 请求的 url
+3. 配置 student_server 中的 application.yml 的数据库连接，使用 maven 将项目打成 jar 包
+4. 运行 .sh 文件
 
 ```shell
 sh run.sh
@@ -129,64 +137,17 @@ java -jar student_server.jar
 
 <img src="README.assets/image-20220211163057648.png" alt="image-20220211163057648" style="zoom: 1%;" />
 
-建表代码：
+建立数据库：
 
-```sql
-CREATE DATABASE studentms;
-
-USE studentms;
-
-CREATE TABLE `s` (
-    `sid` INT AUTO_INCREMENT,
-    `sname` VARCHAR(30) NOT NULL,
-    `password` VARCHAR(30) NOT NULL,
-    PRIMARY KEY (`sid`)
-);
-
-CREATE TABLE `c` (
-    `cid` INT AUTO_INCREMENT,
-    `cname` VARCHAR(30) NOT NULL,
-    `ccredit` TINYINT,
-    PRIMARY KEY (`cid`)
-);
-
-CREATE TABLE `t` (
-    `tid` INT AUTO_INCREMENT,
-    `tname` VARCHAR(30) NOT NULL,
-    `password` VARCHAR(30) NOT NULL,
-    PRIMARY KEY (`tid`)
-);
-
-CREATE TABLE `ct` (
-    `ctid` INT AUTO_INCREMENT,
-    `cid` INT,
-    `tid` INT,
-    `term` CHAR(6) NOT NULL,
-    FOREIGN KEY (`cid`) REFERENCES c(`cid`),
-    FOREIGN KEY (`tid`) REFERENCES t(`tid`),
-    PRIMARY KEY (`ctid`)
-);
-
-CREATE TABLE `sct` (
-    `sctid` INT AUTO_INCREMENT,
-    `sid` INT,
-    `cid` INT,
-    `tid` INT,
-    `grade` FLOAT,
-    `term` CHAR(6),
-    FOREIGN KEY (`sid`) REFERENCES s(`sid`),
-    FOREIGN KEY (`tid`) REFERENCES ct(`tid`),
-    FOREIGN KEY (`cid`) REFERENCES ct(`cid`),
-    PRIMARY KEY (`sctid`)
-);
+```shell
+mysqld -u username -p password DataBaseName < studentms.sql
 ```
-
 
 
 ### 项目存在的问题
 
 - 由于是第一次编写 Vue 项目, 代码复用做得并不是很好. 导致许多组件代码量巨大. 
 - 动态搜索导致前端频繁调用数据接口, 使得性能降低. 考虑使用 mybatis 的缓存解决.
-
 - 期间多次因为太菜了, 导致功能实现不了. 感谢博客园的大佬相助. (CSDN 狗都不用)
 - admin 中的学生查询为过时版本的查询，由于代码与教师查询相似而且代码量巨大，没有修改学生端的查询。~~我真的不是懒狗~~
+- axios 没有实现 url 的全局封装，导致部署服务器的时候修改 url 比较麻烦。
