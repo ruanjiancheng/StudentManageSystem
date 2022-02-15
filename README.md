@@ -1,11 +1,11 @@
-## 项目介绍
+# 项目介绍
 
 
 这是一个采用前后端分离开发的项目，前端采用 Vue 开发、后端采用 Spring boot + Mybatis 开发。
 
 <img src="README.assets/image-20220211161726091.png" alt="image-20220211161726091" style="zoom:50%;" />
 
-### 项目体验
+## 项目体验
 
 服务器比较慢，初次访问请耐心等待。
 
@@ -18,7 +18,7 @@ url: http://47.101.155.92:8080/
 
 欢迎大家测试
 
-#### 项目部署
+## 项目部署
 
 1. star 一下项目
 2. 将 studentms.sql 导入数据库
@@ -30,7 +30,7 @@ url: http://47.101.155.92:8080/
 sh run.sh
 ```
 
-### 项目展示
+## 项目展示
 
 ~~不会 CSS 界面有点丑~~
 
@@ -54,9 +54,9 @@ sh run.sh
 
 ![image-20220211153257252](README.assets/image-20220211153257252.png)
 
-## 前端部分
+# 前端部分
 
-### 项目运行
+## 项目运行
 
 **由于涉及大量的 ES6/7 等新属性，node 需要 6.0 以上版本**
 
@@ -70,7 +70,7 @@ npm install
 npm run serve
 ```
 
-### 技术栈
+## 技术栈
 
 - Vuex
 - Router
@@ -78,7 +78,7 @@ npm run serve
 - Element ui
 - sessionStorage
 
-### 项目介绍
+## 项目介绍
 
 采用 vue 2.0 开发,通过调用后端提供的数据接口实现数据的动态渲染. 项目默认端口号 8080
 
@@ -89,7 +89,7 @@ npm run serve
 - 使用 element ui 实现表单的前端校验功能
 - 使用 sessionStorage 实现登录拦截
 
-### 实现的功能
+## 实现的功能
 
 1. admin
    1. 实现对教师, 学生, 课程的 CRUD
@@ -103,9 +103,9 @@ npm run serve
 
 
 
-## 后端部分
+# 后端部分
 
-### 项目运行
+## 项目运行
 
 **JDK 版本需要 17.0.2**
 ```shell
@@ -117,7 +117,7 @@ java -jar student_server.jar
 
 ```
 
-### 技术栈
+## 技术栈
 
 - Spring boot 2.6.3
 - Mybatis
@@ -126,7 +126,7 @@ java -jar student_server.jar
 - Maven
 - Tomcat
 
-### 项目介绍
+## 项目介绍
 
 采用 Restful 风格开发,采用 CrossOrigin 解决跨域问题. 采用注解以及 xml 文件配置 SQL 语句, 实现动态 SQL 的功能. 为前端提供完备的数据接口.
 
@@ -134,7 +134,7 @@ java -jar student_server.jar
 
 
 
-## 数据库设计
+# 数据库设计
 
 <img src="README.assets/image-20220211163057648.png" alt="image-20220211163057648" style="zoom: 1%;" />
 
@@ -145,7 +145,7 @@ mysqld -u username -p password DataBaseName < studentms.sql
 ```
 
 
-## 项目存在的问题
+# 项目存在的问题
 
 - 由于是第一次编写 Vue 项目, 代码复用做得并不是很好. 导致许多组件代码量巨大. 
 - 动态搜索导致前端频繁调用数据接口, 使得性能降低. 考虑使用 mybatis 的缓存解决.
