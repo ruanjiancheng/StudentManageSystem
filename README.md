@@ -18,7 +18,6 @@ url: http://47.101.155.92:8080/
 
 欢迎大家测试
 
-<<<<<<< HEAD
 #### 项目部署
 
 1. star 一下项目
@@ -26,9 +25,6 @@ url: http://47.101.155.92:8080/
 2. 配置 student_client 中的 axios 请求的 url
 3. 配置 student_server 中的 application.yml 的数据库连接，使用 maven 将项目打成 jar 包
 4. 运行 .sh 文件
-=======
-### 项目运行
->>>>>>> 8fde7ae0792c28d0ac0b96ba45409ffdfdfd9678
 
 ```shell
 sh run.sh
