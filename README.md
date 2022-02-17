@@ -1,7 +1,8 @@
 # 项目介绍
 
-
 这是一个采用前后端分离开发的项目，前端采用 Vue 开发、后端采用 Spring boot + Mybatis 开发。
+
+**19 级上海大学数据库大作业**
 
 <img src="README.assets/image-20220211161726091.png" alt="image-20220211161726091" style="zoom:50%;" />
 
@@ -18,14 +19,12 @@ url: http://47.101.155.92:8080/
 
 ## 项目部署
 
-上传的项目是服务器端运行的文件，需要替换大量 axios 的 url 请求。如果需要可以运行的版本，请联系 QQ：1434919953
-
 1. star 一下项目
 2. 将 studentms.sql 导入数据库
-2. 配置 student_client 中的 axios 请求的 url
-3. 配置 student_server 中的 application.yml 的数据库连接，使用 maven 将项目打成 jar 包
-4. 运行 .sh 文件
+2. 运行 student_client_localhost
+3. 配置 student_server ，以及 port 为 10086。
 
+1. 服务器端：
 ```shell
 sh run.sh
 ```
@@ -63,7 +62,7 @@ sh run.sh
 ```shell
 git clone git@github.com:ruanjiancheng/StudentManageSystem.git
 
-cd /StudentManageSystem/student_client
+cd /StudentManageSystem/student_client_localhost
 
 npm install
 
@@ -152,3 +151,5 @@ mysqld -u username -p password DataBaseName < studentms.sql
 - 期间多次因为太菜了, 导致功能实现不了. 感谢博客园的大佬相助. (CSDN 狗都不用)
 - admin 中的学生查询为过时版本的查询，由于代码与教师查询相似而且代码量巨大，没有修改学生端的查询。~~我真的不是懒狗~~
 - axios 没有实现 url 的全局封装，导致部署服务器的时候修改 url 比较麻烦。
+
+项目停止更新。
