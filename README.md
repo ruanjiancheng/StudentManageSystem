@@ -134,7 +134,7 @@ mysqld -uUsername -pPassword DataBaseName < studentms.sql
 - admin 中的学生查询为过时版本的查询，由于代码与教师查询相似而且代码量巨大，没有修改学生端的查询。~~我真的不是懒狗~~
 - axios 没有实现 url 的全局封装，导致部署服务器的时候修改 url 比较麻烦。
 
-
+<img src="README.assets/900447.png" alt="900447" style="zoom: 10%;" />
 
 このプロジェクトは、バイオレットエバーガーデンに捧げられています!
 
