@@ -6,34 +6,13 @@
 
 <img src="README.assets/image-20220211161726091.png" alt="image-20220211161726091" style="zoom:50%;" />
 
-## 项目体验
-
-服务器维护。
-
-服务器比较慢，初次访问请耐心等待。
-
-url: http://47.101.155.92:8080/
-
-- 教师端 id：4 password：123
-- 学生端 id：2 password：123
-
-欢迎大家测试
-
 ## 项目部署
 
 1. star 一下项目
 2. 将 studentms.sql 导入数据库
 2. 运行 student_client_localhost
-3. 配置 student_server ，以及 port 为 10086。
-
-1. 服务器端：
-```shell
-sh run.sh
-```
-
+4. 配置 student_server ，以及 port 为 10086。
 ## 项目展示
-
-~~不会 CSS 界面有点丑~~
 
 1. 登陆界面
 
@@ -83,14 +62,14 @@ npm run serve
 
 采用 vue 2.0 开发,通过调用后端提供的数据接口实现数据的动态渲染. 项目默认端口号 8080
 
-- 使用监视器,得益于 Mybatis 动态 SQL 功能,实现高性能动态搜索功能
-- 同时实现了基于前端和后端的数据分页功能
+- 使用监视器,得益于 Mybatis 强大的动态 SQL 功能,实现高性能动态搜索功能
 - 使用 router 配置路由,实现不同用户类型导航栏的动态渲染
 - 使用 axios 异步加载后端数据
 - 使用 element ui 实现表单的前端校验功能
 - 使用 sessionStorage 实现登录拦截
+- 分别实现了基于前端和后端的数据分页功能
 
-## 实现的功能
+## 系统功能
 
 1. admin
    1. 实现对教师, 学生, 课程的 CRUD
@@ -122,16 +101,17 @@ java -jar student_server.jar
 
 - Spring boot 2.6.3
 - Mybatis
-- JDBC
-- Servlet
 - Maven
-- Tomcat
 
 ## 项目介绍
 
 采用 Restful 风格开发,采用 CrossOrigin 解决跨域问题. 采用注解以及 xml 文件配置 SQL 语句, 实现动态 SQL 的功能. 为前端提供完备的数据接口.
 
-由于 vue 项目占用了 8080 tomcat 默认端口，所以指定项目启动在 10086 端口, 可以使用 YAML 文件配置。
+由于 vue 项目占用了 8080 Tomcat 默认端口，所以指定项目启动在 10086 端口, 可以使用 YAML 文件配置。使用 Maven 项目进行打包。
+
+## 系统功能
+
+实现前端 Ajex 请求的全部数据接口，Get 请求通过 RESTful 风格开发。
 
 
 
@@ -142,7 +122,7 @@ java -jar student_server.jar
 建立数据库：
 
 ```shell
-mysqld -u username -p password DataBaseName < studentms.sql
+mysqld -uUsername -pPassword DataBaseName < studentms.sql
 ```
 
 
@@ -150,8 +130,12 @@ mysqld -u username -p password DataBaseName < studentms.sql
 
 - 由于是第一次编写 Vue 项目, 代码复用做得并不是很好. 导致许多组件代码量巨大. 
 - 动态搜索导致前端频繁调用数据接口, 使得性能降低. 考虑使用 mybatis 的缓存解决.
-- 期间多次因为太菜了, 导致功能实现不了. 感谢博客园的大佬相助. (CSDN 狗都不用)
+- 期间多次因为太菜了, 导致功能实现不了. 感谢博客园的大佬相助. 
 - admin 中的学生查询为过时版本的查询，由于代码与教师查询相似而且代码量巨大，没有修改学生端的查询。~~我真的不是懒狗~~
 - axios 没有实现 url 的全局封装，导致部署服务器的时候修改 url 比较麻烦。
 
-项目停止更新。
+
+
+このプロジェクトは、バイオレットエバーガーデンに捧げられています!
+
+プロジェクトの更新が停止しました, さようなら! 
