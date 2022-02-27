@@ -136,6 +136,3 @@ mysqld -uUsername -pPassword DataBaseName < studentms.sql
 
 <img src="README.assets/900447.png" alt="900447" style="zoom: 10%;" />
 
-このプロジェクトは、バイオレットエバーガーデンに捧げられています!
-
-プロジェクトの更新が停止しました, さようなら! 
