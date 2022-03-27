@@ -9,9 +9,11 @@
 ## 项目部署
 
 1. star 一下项目
-2. 将 studentms.sql 导入数据库
-2. 运行 student_client_localhost
-4. 配置 student_server ，以及 port 为 10086。
+2. 将 `studentms.sql` 导入数据库，参考下文数据库配置
+3. 运行 `student_client_localhost` 前端
+4. 运行后端
+   1. 方法 1 ，配置 `student_server` 后端的 yml 文件 ，以及 `port` 为 10086。
+   2. 方法 2 ，直接运行 `java -jar student-server.jar` 文件，但是必须保证数据库中 `root` 账号的密码是 `123`
 ## 项目展示
 
 1. 登陆界面
@@ -93,6 +95,8 @@ git clone git@github.com:ruanjiancheng/StudentManageSystem.git
 
 cd /StudentManageSystem/student_server
 
+# 必须保证 root 账号的密码是 123，否则无法连接数据
+# 也可以自己配置 application.yml 文件的数据库连接，并运行
 java -jar student_server.jar
 
 ```
@@ -122,7 +126,7 @@ java -jar student_server.jar
 建立数据库：
 
 ```shell
-mysqld -uUsername -pPassword DataBaseName < studentms.sql
+mysqld -u$Username -p$Password studentms < studentms.sql
 ```
 
 
