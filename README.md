@@ -2,8 +2,6 @@
 
 这是一个采用前后端分离开发的项目，前端采用 Vue 开发、后端采用 Spring boot + Mybatis 开发。
 
-**19 级上海大学数据库大作业**
-
 <img src="README.assets/image-20220211161726091.png" alt="image-20220211161726091" style="zoom:50%;" />
 
 ## 项目部署
@@ -45,7 +43,7 @@
 ```shell
 git clone git@github.com:ruanjiancheng/StudentManageSystem.git
 
-cd /StudentManageSystem/student_client_localhost
+cd /StudentManageSystem/student_client
 
 npm install
 
