@@ -2,7 +2,7 @@
 
 这是一个采用前后端分离开发的项目，前端采用 Vue 开发、后端采用 Spring boot + Mybatis 开发。
 
-<img src="README.assets/image-20220211161726091.png" alt="image-20220211161726091" style="zoom:50%;" />
+<img src="README.assets/900447.png" alt="900447" style="zoom: 10%;" />
 
 ## 项目部署
 
@@ -135,6 +135,4 @@ mysqld -u$Username -p$Password studentms < studentms.sql
 - 期间多次因为太菜了, 导致功能实现不了. 感谢博客园的大佬相助. 
 - admin 中的学生查询为过时版本的查询，由于代码与教师查询相似而且代码量巨大，没有修改学生端的查询。~~我真的不是懒狗~~
 - axios 没有实现 url 的全局封装，导致部署服务器的时候修改 url 比较麻烦。
-
-<img src="README.assets/900447.png" alt="900447" style="zoom: 10%;" />
 
