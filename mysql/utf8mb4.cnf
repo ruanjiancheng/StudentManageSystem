@@ -1,0 +1,8 @@
+init_connect='SET NAMES utf8mb4'
+character-set-server=utf8mb4
+collation-server = utf8mb4_unicode_ci
+default-time_zone = '+8:00'
+[mysql]
+default-character-set=utf8mb4
+[client]
+default-character-set=utf8mb4

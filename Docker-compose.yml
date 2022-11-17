@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  frontend:
+    build: ./student_client
+    ports:
+      - "8080:8080"
+    networks:
+      - vue
+  backend:
+    build: ./student_server
+    ports:
+      - "10086:10086"
+    depends_on:
+      - database
+    networks:
+      - springboot
+      - vue
+  database:
+    build: ./mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - springboot
+
+networks:
+  springboot:
+  vue:
